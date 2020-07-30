@@ -7,6 +7,16 @@
       <sourceFolder url="file://$MODULE_DIR$/django1/boards/migrations" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/django1/django1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/django1/templates" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/accounts" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/accounts/migrations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/static/css" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/templates/includes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/accounts/tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/static/img" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/static/js" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/boards/tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/django1/boards/templatetags" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
