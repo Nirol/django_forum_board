@@ -1,13 +1,8 @@
-
-from django.test import TestCase
-from django.contrib.auth.models import User
 from django.urls import reverse
 from django.urls import resolve
 from django.test import TestCase
-from ..views import home, board_topics, new_topic
-from ..models import Board, Topic, Post
-from ..forms import NewTopicForm
-
+from ..models import Board
+from ..views import TopicListView
 
 
 class BoardTopicsTests(TestCase):
@@ -26,7 +21,7 @@ class BoardTopicsTests(TestCase):
 
     def test_board_topics_url_resolves_board_topics_view(self):
         view = resolve('/boards/1/')
-        self.assertEquals(view.func, board_topics)
+        self.assertEquals(view.func.view_class, TopicListView)
 
 
 

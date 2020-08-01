@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-{% for topic in board.topics.all %}
+    {% for topic in topics %}
   <tr>
     <td><a href="{% url 'topic_posts' board.pk topic.pk %}">{{ topic.subject }}</a></td>
     <td>{{ topic.starter.username }}</td>
@@ -35,4 +35,17 @@
 {% endfor %}
     </tbody>
   </table>
+
+
+{% block content %}
+  <div class="mb-4">
+    <a href="{% url 'new_topic' board.pk %}" class="btn btn-primary">New topic</a>
+  </div>
+
+  <table class="table mb-4">
+    <!-- table content suppressed -->
+  </table>
+
+ {% include 'includes/pagination.html' %}
+
 {% endblock %}
